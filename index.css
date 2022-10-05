@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 550px;
+    width: 96%;
+    margin: 2em auto;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+    position: relative;
+}
+
+footer {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Images section Start */
+
+.header-icon {
+    width: 30px;
+}
+
+.header-logo {
+    width: 70px;
+}
+
+.header-icon,
+.header-logo {
+    margin: 1em;
+}
+
+#user-image {
+    width: 98%;
+    border-radius: 5px;
+}
+
+.badge {
+    width: 150px;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 14%;
+    left: 4%;
+}
+
+#dislike {
+    width: 26px;
+    height: 26px;
+}
+
+
+#like {
+    width: 40px;
+    height: 36px;
+
+}
+
+
+
+/* Images section End */
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: none;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.like-btn:hover {
+    background: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
+}
+
+.dislike-btn:hover {
+    background: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+}
+
+#userName {
+    position: absolute;
+    top: 77%;
+    left: 5%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 32px;
+    color: #F8F8F8;
+}
+
+#userBio {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 26px;
+    color: #B7B7B7;
+
+}
+
+/* media queries start */
+
+@media (max-width: 500px) {
+    #userName {
+        font-size: 1.5rem;
+        line-height: 24px;
+    }
+    
+    #userBio {
+        font-size: 1.2rem;
+        line-height: 16px;
+    }
+
+    .badge {
+        top: 16%;
+    }
+
+    #dislike {
+        width: 23px;
+        height: 23px;
+    }
+    
+    
+    #like {
+        width: 36px;
+        height: 32px;
+    
+    }
+    
+    button {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 450px) {
+    #userName {
+        font-size: 1.2rem;
+        line-height: 20px;
+    }
+    
+    #userBio {
+        font-size: .8rem;
+        line-height: 16px;
+    }
+
+    .badge {
+        top: 18%;
+    }
+
+    #dislike {
+        width: 20px;
+        height: 20px;
+    }
+    
+    
+    #like {
+        width: 34px;
+        height: 30px;
+    
+    }
+    
+    button {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 370px) {
+    #userName {
+        font-size: 1rem;
+        top: 75%;
+    }
+    
+    #userBio {
+        font-size: .65rem;
+        top: 78%;
+    
+    }
+
+    .badge {
+        width: 130px;
+        top: 20%;
+    }
+
+    #dislike {
+        width: 18px;
+        height: 18px;
+    }
+    
+    
+    #like {
+        width: 30px;
+        height: 26px;
+    
+    }
+    
+    button {
+        width: 50px;
+        height: 50px;
+    }
+}
